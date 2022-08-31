@@ -1,34 +1,52 @@
-import React, {useRef } from 'react'
-import SignaturePad from 'react-signature-canvas';
+// import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useEffect } from "react";
 
-function App() {
 
-  let sigPad = useRef({}) as React.MutableRefObject<any>;;
-  let data = '';
+// function Card (props: { title: unknown; body: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; }) {
+//   let toggled = false;
+  
+//   const handleToggleBody = () => {
+//     toggled = true;
+//     console.log(toggled);
+//   };
 
-function clear (){
-  sigPad.current.clear();
-}
-function save(){
-  data=sigPad.current.toDataURL()
-}
+//   useEffect(() => {
+//     console.log(“Component rendered, the value of toggled is:“, toggled);
+//   }, [props.title]);
 
-function show(){
-  sigPad.current.fromDataURL(data);
-}
+//   return (
+//     <section className=“card”>
+//       <h3 className=“card__title” onMouseMove={handleToggleBody}>
+//         {props.title}
+//       </h3>
 
-  return (
-    <div >
-      <button onClick={clear}>Clear</button>
-      <button onClick={save}>Save</button>
-      <button onClick={show}>Show</button>
- <SignaturePad
- ref={sigPad}
- penColor="black"
- />
- 
-  </div>
-  )
-}
+//       {toggled && <article className=“card__body”>{props.body}</article>}
+//     </section>
+//   );
+// }
 
-export default App
+// // Renders the application
+// function App () {
+  
+//   const [cardDetails, setCardDetails] = useState({
+//     title: “Something”,
+//     body: “uniquely done”,
+//   });
+
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setCardDetails({
+//         title: “We”,
+//         body: “have updated something nice”,
+//       });
+//     }, 5000); // Force an update after 5s
+//   }, []);
+
+//   return (
+//     <div>
+//       <Card title={cardDetails.title} body={cardDetails.body} />
+//     </div>
+//   );
+// }
+const hii = [];
+//@ts-ignore
+export default App1;
